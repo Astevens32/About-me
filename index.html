@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Aliko Stevens - Portfolio</title>
+
+    <!-- Link to external CSS file for page styling -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Links to external JavaScript file to give it more interactivity -->
+    <script src="script.js" defer></spript>
+</head>
+
+<!-- Calls greetUser function on the page whenever it loads -->
+<body onload="greetUser()">
+ 
+<!-- Header section with my name and a list of my skills -->
+<header>
+    <!-- Applies the typing effect to a heading -->
+    <h1>Aliko Stevens</h1>
+    <p>Creator | Designer | Programmer</p>
+</header>
+
+<!-- Navigation bar for quick access to in-page links to different sections -->
+<nav class="navbar">
+    <ul>
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#future">Future Goals</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#commitments">Commitments to Growth</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+    </ul>
+</nav>
+
+<!-- Intro section to describe what my site is all about -->
+<section id="intro">
+    <h2>Introduction</h2>
+    <p>Welcome to my digital playground as a Creator, Designer, and Programmer. Here, I will share my experiences, skills, and projects.</p>
+</section>
+
+<!-- About Me section to give a snapshot of who I am -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>I am a 29 year old aspiring full stack developer. Currently working in aviation with a background in aircraft maintenance, 
+        In February of 2016, I enlisted and went off to join the United States Navy. As an Aviation Machinists Mate(powerplant mechanic),
+        I gained exponential skills, abilities, and achievements through discipline and focused planning. 
+        With that, I have always had a talent for envisioning elaborate themes and creating cool concepts. Which is what ultimately brought
+        me to the point of wanting to learn web development. I will use this site to showcase my skills and achivements over time.
+    </p>
+</section>
+
+<!-- Skills section to display my skillsets and my abilities -->
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-bar">
+        <!-- Fills 80% width for html skill -->
+        <div class="skill-level" style="width: 80%;">html</div>
+    </div>
+    <div class="skills-bar">
+        <!-- Fills &0% width for css skill -->
+        <div class="skill-level" style="width: 70%;">css</div>
+    </div>
+    <p>HTML, CSS, JavaScript, Python | Adobe, MS Office, Canva/Kittl | Project Management, Agile, Strong AtD</p>
+</section>
+
+<!-- Projects section to display my podcast clips, photos, designs, and projects -->
+<section id="Projects">
+    <h2>Projects</h2>
+    <div class="grid-container">
+        <div class="grid-item">
+        <h3>Podcast Project: TG Podcast</h3>
+        <p> A look into my journey with podcasting, sharing stories and creative insights with some of America's finest.</p>
+        </div>
+
+        <div class="grid-item">
+        <h3>Graphic Design: Logo, Banners, Animations</h3>
+        <p>Exploring my passion for digital design with unique and engaging visuals for creators, entrepreneurs, 
+            and professionals in every industry.</p>
+        </div>
+
+        <div class="grid-item">
+        <h3>Web Development: Portfolio</h3>
+        <p>Creating visually engaging and functional web apps using HTML, CSS, and JavaScript.</p>
+        <p>Building functional web apps using Python, PHP, and JavaScript</p>
+        </div>
+    </div>
+</section>
+
+<!-- Future section to alert viewers on my upcoming projects -->
+<section id="Future">
+    <h3>Future Goals</h3>
+    <p>My goals moving forward are to practice, apply, and test everyday. To continue learning how to master front end development,
+        while also trying to learn and apply back end development skills to my creations.
+    </p>
+    <p>I ultimately want to land an opportunity with a software company to learn and study under proven and experienced programmers.</p>
+</section>
+
+<!-- Commitment section to stamp my integrity with one sentence -->
+<section id="Commitment">
+    <h3>Commitments</h3>
+    <p>I am committed to providing value and serving as an asset to all Partnerships and Affiliations.</p>
+</section>
+
+<!-- Contact section for viewers to reach out and communicate with me -->
+ <section id="Contact Me">
+    <h2>Contact Me</h2>
+<!-- Button to toggle contact info visibility -->
+    <button id="showContactBtn" onclick="toggleContactInfo()">Show Contact Details</button>
+    <!-- Contact information hidden by default -->
+    <div id="contactInfo" style="display: none;">
+        <p>Feel free to reach out to me through the following channels:</p>
+        <ul>
+            <li><a href="mailto:VerdeLuxxe@gmail.com"><i class="fa fa=envelope"></i> Email: VerdeLuxxe@gmail.com</a></li>
+            <li><a href="https://www.instagram.com/likoluxxe/profilecard/?igsh=MWxyNWI0cWRkNGZwaA==" target="_blank"><i class="fa fa-instagram"></i> Instagram</a></li>
+            <li><a href="https://www.x.com/alikobakari?s=21&t=uAfQNAyTg--Bz-EQVjaKrg" target="_blank"><i class="fa fa-twitter"></i> X</a></li>
+            <li><a href="https://www.facebook.com/share/p/dZrNVVqThfu424ig/?milbextid+WC7FNe" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></li>
+            <li><a href="hhtps://www.linkedin.com/in/aliko-stevens-a9a8b3220/" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn: Aliko Stevens</a></li>
+            <li><a href="https://github.com/aliko-stevens" target="_blank"><i class="fa fa-github"></i> GitHub: aliko-stevens</a></li>
+            <li><i class="fa fa-phone"></i> Phone: 775-699-7688</li>
+        </ul>
+    </div>
+ </section>
+
+<!-- Dark mode toggle switch -->
+ <label class="switch">
+<!-- Calls toggleDarkMode function on click -->
+    <input type="checkbox" onclick="toggleDarkMode()">
+    <span class="slider"></span> Dark Mode
+ </label>
+
+<!-- Footer with copyright and outro message -->
+ <footer class="footer">
+    <p>© 2024 Aliko Stevens. All Rights Reserved.</p>
+    <p>Follow my journey on social media and stay updated on my latest projects.</p>
+    <a href="https://X.com" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+ </footer>
+ 
+</body>
+
+</html>

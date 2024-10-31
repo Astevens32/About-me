@@ -1,0 +1,237 @@
+/* General Styling for the whole page */
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #cfcfd8;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 0.1px;
+    /* Brand color for header background */
+    background-color: #1b9164;
+    color: #ffffff
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: center;
+    /* Brand color for navbar background */
+    background-color: #196749;
+    padding: 10px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ffffff
+}
+
+.navbar a:hover {
+    /* Gold hover effect for links */
+    color: #b6a618;
+    /* Enlarges the text on hover */
+    transform: scale(1.1);
+    transition: color 0.3s, transform 0.3s;
+}
+
+/* Section for spacing and alignment */
+section {
+    padding: 40px 20px;
+}
+
+/* Brand color for section headers */
+h2 {
+    color: #154734
+}
+
+/* Grid layout for Projects section */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Individual project card styling */
+.grid-item {
+    padding: 20px;
+/* Light green background for project cards */    
+    background-color: #84fa35;
+    border-radius: 12px;
+/*Soft shadow effect for depth */    
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.grid-item:hover {
+/* Small lift on hover for better interactivity */    
+    transform: translateY(-10px);
+}
+
+/* Footer styling */
+.footer {
+    text-align: center;
+    padding: 20px;
+/* Brand color to stay consistent with the theme */    
+    background-color: #196749;
+    color:#ffffff;
+    border-radius: 0 0 15px 15px;
+/* Top shadow for footer */    
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer a {
+    /* Icon color */
+    color:#ffffff;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color:#154734;
+}
+/* Smooth Scrolling for in-page navigation */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Styling for the typing effect on text */
+.typing {
+    /* Sets font to a monospaced typwriter style */
+    font-family: 'Courier New', monospace;
+    /* Hides extra text until it's animated */
+    overflow: hidden;
+    /* Prevents text wrapping */
+    white-space: nowrap;
+    /* Adds a blinking cursor effect */
+    border-right: 4px solid emerald;
+    /* Runs typing and blinking animations */
+    animation: typing 3.5s steps(40, end), blink 0.75s step-end infinite;
+}
+
+/* Keyframe animation for the typing effect */
+@keyframes typing {
+    /* Starts with no text */
+    from { width: 0; }
+    /* Expands to full text */
+    to { width: 100%; }
+}
+
+/* base styling for skill bars */
+.skills-bar {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 20px;
+    margin: 10px 0;
+}
+
+/* Styling for skill level indicators within each bar */
+.skill-level {
+    height: 20px;
+    width: 0;
+    background-color: #154734;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    transition: width 1.5s ease;
+}
+
+/* Styles for dark mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Dark mode for nav links */
+.dark-mode .navbar a {
+    color: #ffffff;
+}
+
+/* Styling for the dark mode toggle switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+/* Hides default checkbox */
+.switch input { display: none; }
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* Light color for off state */
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 24px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    /* color of toggle knob */
+    background-color: #ffffff;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    /* Dark mode color for on state */
+    background-color: #154734;
+}
+
+input:checked + .slider:before {
+    /* Moves toggle knob to right when clicked */
+    transform: translateX(26px);
+}
+
+/* Base styling for fade-in animation */
+.fade-in {
+    /* Start fully transparent */
+    opacity: 0;
+    /* Start slightly below position */
+    transform: translateY(20px);
+    /* Smooth transition for fade-in */
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+    /* Full opacity when visible */
+    opacity: 1;
+    /* move back to original position */
+    transform: translateY(0);
+}
+
+#contactInfo {
+    /* Ensures contact info is hidden by default */
+    display: none;
+    padding-top: 10px;
+}
+
+#showContactBtn {
+    margin-top: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
